@@ -864,10 +864,6 @@ form {
 
 
 @media screen and (max-width: 667px){
-	.nav-links{
-		display: none;
-	}
-
 	#menuToggle {
 		display: block;
 	}
