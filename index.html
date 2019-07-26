@@ -13,37 +13,25 @@
 
 <body>
 	<header>
-		<div class="logo-container" data-info="header">
-			<a href="#"><img src="./img/logo.svg" alt="logo" /></a>
-			<h4 class="logo">Logo</h4>
-		</div>
 		<nav>
-			<div id="menuToggle">
-				<!--
-							A fake / hidden checkbox is used as click reciever,
-							so you can use the :checked selector on it.
-							-->
-				<input type="checkbox" />
-
-				<span></span>
-				<span></span>
-				<span></span>
-
-				<ul id="menu">
-					<li><a class="nav-link" href="#">Specs</a></li>
-					<li><a class="nav-link" href="#">Products</a></li>
-					<li><a class="nav-link" href="#">Contact</a></li>
-				</ul>
+			<div class="logo-container">
+					<a href="#"><img src="./img/logo.svg" alt="logo" /></a> <h4 class="logo">Logo</h4>
 			</div>
-			<ul class="nav-links">
-				<li><a class="nav-link" href="#">Specs</a></li>
-				<li><a class="nav-link" href="#">Products</a></li>
-				<li><a class="nav-link" href="#">Contact</a></li>
-			</ul>
+		<ul class="nav-links">
+				<li><a class="nav-link" href="#">About</a></li>
+				<li><a class="nav-link" href="#">Work</a></li>
+				<li><a class="nav-link" href="#">Projects</a></li>	
+				<li><a class="nav-link" href="#">Contact Us</a></li>	
+		</ul>
+			<div class="cart">
+					<img src="./img/cart.svg" alt="cart" />
+			</div>
+			<div class="burger">
+				<div class="line1"></div>
+				<div class="line2"></div>
+				<div class="line3"></div>
+			</div>
 		</nav>
-		<div class="cart">
-			<img src="./img/cart.svg" alt="cart" />
-		</div>
 	</header>
 
 	<main>
@@ -145,7 +133,7 @@
 						</div>
 					</div>
 					<div class="card-image">
-						<img src="./img/matebook.png" alt="productImage" />
+						<img src="./img/nodejs.png" alt="productImage" />
 					</div>
 					<div class="card-content">
 						<p>Visit ten places on our planet that are undergoing the biggest changes today</p>
@@ -169,7 +157,7 @@
 						</div>
 					</div>
 					<div class="card-image">
-						<img src="./img/matebook.png" alt="productImage" />
+						<img src="./img/nodejs.png" alt="productImage" />
 					</div>
 					<div class="card-content">
 						<p>Visit ten places on our planet that are undergoing the biggest changes today</p>
@@ -193,7 +181,7 @@
 						</div>
 					</div>
 					<div class="card-image">
-						<img src="./img/matebook.png" alt="productImage" />
+						<img src="./img/nodejs.png" alt="productImage" />
 					</div>
 					<div class="card-content">
 						<p>Visit ten places on our planet that are undergoing the biggest changes today</p>
@@ -217,7 +205,7 @@
 						</div>
 					</div>
 					<div class="card-image">
-						<img src="./img/matebook.png" alt="productImage" />
+						<img src="./img/nodejs.png" alt="productImage" />
 					</div>
 					<div class="card-content">
 						<p>Visit ten places on our planet that are undergoing the biggest changes today</p>
@@ -402,7 +390,9 @@
 				</div>
 				<div class="form-fields">
 					<form onsubmit="event.preventDefault();">
-						<input 
+						<div class="d-flex">
+							<div class="input-field pr-10">
+								<input 
 							 type="text"
 							 name="name"
 							 id="name"
@@ -410,11 +400,15 @@
 							 maxlength="100"
 							 required
 							  />
-							 <br/>
-						<input type="email" name="email" id="email" value="" placeholder="Email" required
-							maxlength="100" />
-							<br/>
-						<textarea placeholder="message" rows="10" cols="15" maxlength="400"></textarea>
+							</div>
+							<div class="input-field">
+								<input type="email" name="email" id="email" class="p-10" value="" placeholder="Email" required
+								maxlength="100" />
+							</div>
+							<div>
+								<textarea class="p-10" placeholder="message" maxlength="400"></textarea>
+							</div>
+						</div>
 						<button type="submit">Submit</button>
 					</form>
 				</div>
@@ -437,5 +431,6 @@
 			</div>
 		</div>
 	</footer>
+	<script src="app.js"></script>
 </body>
 </html>
