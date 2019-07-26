@@ -63,8 +63,6 @@ body {
 	.toggle .line3 {
 		transform: rotate(45deg) translate(-5px, -6px);
 	}
-/** Header ENDS **/
-
 
 
 ul.nav-links li:hover a {
@@ -75,6 +73,7 @@ ul.nav-links li:hover a {
 button, .cart {
 	margin: 10px;
 	cursor: pointer;
+	outline: none;
 	font-family: 'Poppins', sans-serif;
 }
 
@@ -116,6 +115,12 @@ header {
 	flex: 1;
 	justify-content: flex-end;
 }
+
+
+/** Header ENDS **/
+
+
+
 
 .presentation {
 	display: flex;
@@ -207,75 +212,6 @@ header {
 	z-index: -1;
 }
 
-@keyframes drop {
-	0% {
-		opacity: 0;
-		transform: translateY(-80px);
-	}
-	100% {
-		opacity: 1;
-		transform: translateY(0px);
-	}
-}
-
-@media screen and (max-width: 1024px) {
-	
-	.presentation {
-		flex-direction: column;
-	}
-	.introduction {
-		margin-top: 5vh;
-		text-align: center;
-	}
-	.intro-text h1 {
-		font-size: 30px;
-	}
-	.intro-text p {
-		font-size: 18px;
-	}
-	.cta {
-		padding: 10px 0px 0px 0px;
-	}
-	.laptop-select {
-		bottom: 5%;
-		right: 50%;
-		width: 50%;
-		transform: translate(50%, 5%);
-	}
-	.cover img {
-		height: 80%;
-		z-index: -1;
-	}
-	.small-circle,
-	.medium-circle,
-	.big-circle {
-		opacity: 0.2;
-	}
-}
-
-@media screen and (max-width: 980px) { 
-	.section-three .container-products {
-		flex-wrap: wrap !important;
-		justify-content: space-between;
-	}
-
-	.form-container {
-		width: 90%;
-	}
-
-	.d-flex {
-		flex-direction: column;
-	}
-
-	.form-container textarea{
-		width: 400px !important;
-		height: 200px !important;
-	}
-	.form-container .pr-10{
-		padding-right: 0px
-	}
-
-}
 
 /*
  * Make this absolute positioned
@@ -311,15 +247,6 @@ header {
   transform: none;
 }
 
-@media screen and (max-width: 667px){
-	.nav-links{
-		display: none;
-	}
-
-	#menuToggle {
-		display: block;
-	}
-}
 
 
 /*** section-second **/
@@ -498,7 +425,7 @@ header {
 .card-color {
     width: 40px;
     height: 40px;
-    background: #fdc10a;
+    background: #e2e2e6;
     border-radius: 100%;
 }
 
@@ -545,34 +472,6 @@ button.btn-outline:hover{
 	}
 
 
-
-
-@media(min-width: 900px){
-
-
-	.about-wrapper {
-		display: flex;
-		justify-content: center;
-	}
-	.about-wrapper .about {
-		flex: 6;
-		display: flex;
-		justify-content: center;
-		align-items: center;
-		border-right: 2px solid black;
-	}
-
-	.section-second .container {
-			display: flex;
-	}
-		
-	.container .card .face.face1 {
-			display: flex;
-			justify-content: center;
-			align-items: center;
-			}
-		
-}
 
 
 /** section--four **/
@@ -891,3 +790,115 @@ form {
 		transform: translateX(0);
 	 }
  }
+
+
+@keyframes drop {
+	0% {
+		opacity: 0;
+		transform: translateY(-80px);
+	}
+	100% {
+		opacity: 1;
+		transform: translateY(0px);
+	}
+}
+
+@media screen and (max-width: 1024px) {
+	
+	.presentation {
+		flex-direction: column;
+	}
+	.introduction {
+		margin-top: 5vh;
+		text-align: center;
+	}
+	.intro-text h1 {
+		font-size: 30px;
+	}
+	.intro-text p {
+		font-size: 18px;
+	}
+	.cta {
+		padding: 10px 0px 0px 0px;
+	}
+	.laptop-select {
+		bottom: 5%;
+		right: 50%;
+		width: 50%;
+		transform: translate(50%, 5%);
+	}
+	.cover img {
+		height: 80%;
+		z-index: -1;
+	}
+	.small-circle,
+	.medium-circle,
+	.big-circle {
+		opacity: 0.2;
+	}
+}
+
+@media screen and (max-width: 980px) { 
+	.section-three .container-products {
+		flex-wrap: wrap !important;
+		justify-content: space-between;
+	}
+
+	.form-container {
+		width: 90%;
+	}
+
+	.d-flex {
+		flex-direction: column;
+	}
+
+	.form-container textarea{
+		width: 400px !important;
+		height: 200px !important;
+	}
+	.form-container .pr-10{
+		padding-right: 0px
+	}
+
+}
+
+
+@media screen and (max-width: 667px){
+	.nav-links{
+		display: none;
+	}
+
+	#menuToggle {
+		display: block;
+	}
+}
+
+
+
+@media(min-width: 900px){
+
+
+	.about-wrapper {
+		display: flex;
+		justify-content: center;
+	}
+	.about-wrapper .about {
+		flex: 6;
+		display: flex;
+		justify-content: center;
+		align-items: center;
+		border-right: 2px solid black;
+	}
+
+	.section-second .container {
+			display: flex;
+	}
+		
+	.container .card .face.face1 {
+			display: flex;
+			justify-content: center;
+			align-items: center;
+			}
+		
+}
+
